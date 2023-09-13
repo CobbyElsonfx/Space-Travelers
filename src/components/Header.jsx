@@ -7,7 +7,7 @@ function Header() {
     <>
       <div className="navbar">
         <div>
-          <img src={logo} alt="logo" />
+          <img className="logo" src={logo} alt="logo" />
           <h2>Space Travelers Hub</h2>
         </div>
         <nav>

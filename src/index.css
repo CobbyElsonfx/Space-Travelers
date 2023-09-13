@@ -16,3 +16,8 @@ body {
   width: 90%;
   text-decoration: underline;
 }
+
+.logo {
+  width:4rem;
+  height: auto;
+}
