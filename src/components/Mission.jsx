@@ -3,14 +3,24 @@ import { useSelector } from 'react-redux';
 import MissionsView from './MissionsView';
 
 function Mission() {
-  const { missionsFetched } = useSelector((state) => state.missions);
+  const { missions } = useSelector((state) => state.missions);
 
   return (
     <div>
-      {
-        missionsFetched
-          .map((mission) => <MissionsView key={mission.mission_id} missionsProp={mission} />)
-      }
+      <table>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        {
+            missions
+              .map((mission) => <MissionsView key={mission.mission_id} missionsProp={mission} />)
+         }
+      </table>
     </div>
   );
 }
