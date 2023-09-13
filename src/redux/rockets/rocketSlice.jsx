@@ -11,14 +11,16 @@ export const getRockets = createAsyncThunk(
       const rocketsApi = response.data;
       const rocketsFilter = [];
       rocketsApi.forEach((rocket) => {
-        const { id } = rocket;
+        const idApi = rocket.id;
         const nameApi = rocket.rocket_name;
         const TypeApi = rocket.rocket_type;
+        const descriptionApi = rocket.description;
         const imgApi = rocket.flickr_images[0];
         rocketsFilter.push(
           {
-            id,
+            id: idApi,
             name: nameApi,
+            description: descriptionApi,
             type: TypeApi,
             flickr_images: imgApi,
           },
