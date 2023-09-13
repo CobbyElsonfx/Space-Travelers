@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function Mission() {
   return (
     <div>
       Mission
     </div>
-  )
+  );
 }
 
-export default Mission
+export default Mission;
