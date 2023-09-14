@@ -24,7 +24,10 @@ const missionsSlice = createSlice({
     },
     leaveMission: (state, action) => {
       const missionId = action.payload;
-      state.reservedMissions = state.reservedMissions.filter((id) => id !== missionId);
+      return {
+        ...state,
+        reservedMissions: state.reservedMissions.filter((id) => id !== missionId),
+      };
     },
   },
   extraReducers: (builder) => {

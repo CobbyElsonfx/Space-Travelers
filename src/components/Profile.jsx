@@ -1,9 +1,13 @@
 import React from 'react';
+import MyMissions from './MyMissions';
 
 function Profile() {
   return (
-    <div>
-      Profile
+    <div className="myProfileWrapper">
+      <div className="myMissions">
+        <h2>My Missions</h2>
+        <MyMissions />
+      </div>
     </div>
   );
 }

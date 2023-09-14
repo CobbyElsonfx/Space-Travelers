@@ -13,7 +13,6 @@ function Mission() {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th>Website</th>
           </tr>
         </thead>
         {
