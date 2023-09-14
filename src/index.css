@@ -18,10 +18,9 @@ body {
 }
 
 .logo {
-  width:4rem;
+  width: 4rem;
   height: auto;
 }
-
 
 table {
   border-collapse: collapse;
@@ -35,7 +34,6 @@ th {
   background-color: white;
   text-align: start;
 }
-
 
 td {
   min-width: 120px;
