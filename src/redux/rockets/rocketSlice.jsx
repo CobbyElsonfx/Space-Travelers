@@ -39,9 +39,10 @@ const rocketSlice = createSlice({
     rockets: [],
   },
   extraReducers: (builder) => {
-    builder.addCase(getRockets.fulfilled, (state, action) => {
-      state.rockets = action.payload;
-    });
+    builder.addCase(getRockets.fulfilled, (state, action) => ({
+      ...state,
+      rockets: action.payload,
+    }));
   },
 });
 
