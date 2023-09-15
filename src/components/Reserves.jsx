@@ -20,7 +20,12 @@ const Reserve = ({ rocketId, description }) => {
 
   return (
     <>
-      <p>{description}</p>
+      <div className="description-container">
+        <span className={reserved ? 'reserved-button' : 'hide'}>
+          Reserve
+        </span>
+        <p>{description}</p>
+      </div>
       <button
         type="button"
         onClick={reserved ? cancelReservationAction : reserveRocketAction}
