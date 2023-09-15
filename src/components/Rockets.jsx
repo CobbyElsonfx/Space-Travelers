@@ -6,7 +6,7 @@ import Reserve from './Reserves';
 
 function Rockets() {
   const dispatch = useDispatch();
-  const { rockets } = useSelector((store) => store.rockets);
+  const rockets = useSelector((state) => state.rockets.rockets);
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
@@ -20,9 +20,8 @@ function Rockets() {
             </div>
             <div className="text-container">
               <h2 className="name">{rocket.name}</h2>
-              <Reserve key={rocket.id} />
               <p className="description">{rocket.description}</p>
-              <button type="button" className="reserve-button">Reserve Rocket</button>
+              <Reserve key={rocket.id} rocketId={rocket.id} />
             </div>
           </div>
         ))
