@@ -6,16 +6,20 @@ function Header() {
   return (
     <>
       <div className="navbar">
-        <div>
+        <div className="logoDescript">
           <img className="logo" src={logo} alt="logo" />
           <h2>Space Travelers Hub</h2>
         </div>
         <nav>
-          <NavLink to="/rockets">Rocket</NavLink>
-          <NavLink to="/missions">Mission</NavLink>
-          <NavLink to="/profile">My Profile</NavLink>
+          <div className="navItems">
+            <div><NavLink to="/rockets">Rocket</NavLink></div>
+            <div><NavLink to="/missions">Mission</NavLink></div>
+            <div className="divider" />
+            <div><NavLink to="/profile">My Profile</NavLink></div>
+          </div>
         </nav>
       </div>
+      <hr />
     </>
   );
 }
