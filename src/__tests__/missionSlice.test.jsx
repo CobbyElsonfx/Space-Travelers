@@ -1,5 +1,4 @@
-import { joinMission, leaveMission } from '../redux/missions/missionsSlice'; // Import your reducers
-import missionsReducer from '../redux/missions/missionsSlice'; // Import your reducer function
+import missionsReducer, { joinMission, leaveMission } from '../redux/missions/missionsSlice'; // Import your reducers
 
 describe('missionsSlice reducers', () => {
   it('should handle joining a mission', () => {

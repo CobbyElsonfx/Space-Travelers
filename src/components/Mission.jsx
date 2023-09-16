@@ -13,6 +13,7 @@ function Mission() {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
+            <th className="fade">Status</th>
           </tr>
         </thead>
         {
