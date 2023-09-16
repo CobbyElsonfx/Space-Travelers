@@ -1,4 +1,4 @@
-import rocketSlice, { reserveRocket, cancelReservation } from '../redux/rockets/rocketslice'; // Import your actions
+import rocketSlice, { reserveRocket, cancelReservation } from '../redux/rockets/rocketSlice'; // Import your actions
 
 describe('Rocket reducers', () => {
   it('should handle reserving rockets', () => {
