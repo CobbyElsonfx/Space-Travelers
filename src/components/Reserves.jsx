@@ -1,6 +1,6 @@
-/* eslint-disable linebreak-style */
 import PropTypes from 'prop-types';
 import React from 'react';
+import '../stylesheets/reservesStyles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { cancelReservation, reserveRocket } from '../redux/rockets/rocketSlice';
 
@@ -21,10 +21,12 @@ const Reserve = ({ rocketId, description }) => {
   return (
     <>
       <div className="description-container">
-        <span className={reserved ? 'reserved-button' : 'hide'}>
-          Reserve
-        </span>
-        <p>{description}</p>
+        <p>
+          <span className={reserved ? 'reserved-button' : 'hide'}>
+            Reserved
+          </span>
+          {description}
+        </p>
       </div>
       <button
         type="button"
